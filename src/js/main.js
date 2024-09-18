@@ -13,11 +13,10 @@ const closeDrawerBtn = document.querySelector('.close-drawer-btn');
 const drawer = document.querySelector('.drawer');
 const drawerItems = document.querySelector('.drawer-items');
 
-
 const phonesrender = async () => {
     const data = await getPhones();
     const limitedData = data.slice(0, 4);
-    phonesList.innerHTML = limitedData.map((item) => (
+    phonesList.innerHTML = limitedData?.map((item) => (
         `<li class="w-[250px] rounded-[4px] text-center shadow-md px-[20px] py-[20px] bg-[#fff]">
         <img src=${item.img}>
         <h3 class="font-bold mb-[10px]">${item.title}</h3>
@@ -32,7 +31,7 @@ phonesrender();
 const notebookrender = async () => {
     const data = await getNotebook();
     const newdata = data.slice(0, 4)
-    notebookList.innerHTML = newdata.map((item) => (
+    notebookList.innerHTML = newdata?.map((item) => (
         `<li class="w-[250px] rounded-[4px] text-center shadow-md px-[20px] py-[20px] bg-[#fff]">
         <img src=${item.img}>
         <h3 class="font-bold mb-[10px]">${item.title}</h3>
