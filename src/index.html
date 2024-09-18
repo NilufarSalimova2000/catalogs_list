@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="open-drawer-btn">Open Drawer</button>
+
+    <div class="drawer">
+        <div class="drawer-content">
+            <button class="close-drawer-btn">Close</button>
+            <h2>Saved Items</h2>
+            <ul class="drawer-items">
+                
+            </ul>
+        </div>
+    </div>
+    <section class="catalog relative py-[50px] bg-[#F8F8F8]">
+        <div class="container">
+            <h2 class="text-center mb-[20px] text-[24px] font-bold">Phones</h2>
+            <ul class="phones_list flex flex-wrap justify-between gap-[20px] mb-[50px]
+            "></ul>
+            <div class="phone_info w-[20%] h-[70%] absolute bg-slate-50 translate-x-[-50%] left-[50%] top-[50%] translate-y-[-50%] text-center shadow-md" style="display:none;">
+                <button class="close_btn bg-[#f44336] w-[70px] py-[5px]">close</button>
+                <div class="phone_details">
+                </div>
+            </div>
+            <div class="modal_bg" style="display: none;"></div>            
+            <h2 class="text-center mb-[20px] text-[24px] font-bold">Notebook</h2>
+            <ul class="notebook_list flex flex-wrap justify-between gap-[20px] mb-[50px]
+            "></ul>
+        </div>
+    </section>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
